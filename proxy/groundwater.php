@@ -1,0 +1,1 @@
+<?php echo file_get_contents("http://waterservices.usgs.gov/nwis/iv/?format=json,1.1&stateCd=ia&parameterCd=72019"); ?>

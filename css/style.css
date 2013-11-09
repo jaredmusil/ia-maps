@@ -1,0 +1,92 @@
+input { border:1px solid grey; }
+body{
+	font: 12px/18px Arial, Sans-serif;
+}
+
+/* containers */
+.map-width-container{
+	clear: both;
+	position: relative;
+	width: 340px;
+	margin-bottom: 10px;
+	border: 0px solid #000;
+	border-radius: 5px;
+}
+.map-size-container{
+	clear: both;
+	position: relative;
+	height: 225px;
+	width: 340px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+.map-table-container{
+	width: 330px;
+	margin: 0px;
+	padding: 5px;
+	border: 0px solid #000;
+	border-radius: 5px;
+}
+.map-status-container{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #fbfbfb;
+	margin-top: 5px;
+	font-family: Arial;
+	text-align: center;
+	display: block;
+}
+
+/* specfic classes */
+.map-img {
+	position: absolute;
+	left: 0;
+	top: 1;
+	border: 0;
+}
+.map-canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.map-key{
+	width: 342px;
+	margin: 0 0 5px 0;
+	border: 0px solid #000;
+	font-family: 'Courier New';
+}
+.map-width-container{
+	clear: both;
+	position: relative;
+	width: 340px;
+	margin-bottom: 10px;
+	border: 0px solid #000;
+	border-radius: 5px;
+}
+.map-size-container{
+	clear: both;
+	position: relative;
+	height: 225px;
+	width: 340px;
+	margin-bottom: 10px;
+	border: 0px solid #000;
+	border-radius: 5px;
+
+}
+.map-status{
+	margin: 0;
+	padding: 2px 2px 2px 22px;
+}
+.map-status-information{ background: url('../img/information.gif') no-repeat 4px center; }
+.map-status-nocanvas{ background: url('../img/exclamation.gif') no-repeat 4px center; }
+.map-status-winter{	background: url('../img/snowflake.gif') no-repeat 4px center; }
+
+/* general */
+.loading {
+	background-color: #eee;
+	background-image: url('img/ajax-loading.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 1;
+}

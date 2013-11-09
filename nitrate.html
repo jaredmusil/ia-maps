@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<title>Realtime IA Nitrate Map</title>
+		<link rel="shortcut icon" href="img/nitrate.ico">
+		<link rel="stylesheet" type="text/css" href="css/tablesorter.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<script src="http://ia.water.usgs.gov/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/tablesorter/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript" src="js/nitrate.js"></script>
+	</head>
+	<body>
+	<center>
+		<!--Navigation-->
+		<div class="map-width-container">
+			<a href="nitrate.html">Nitrate</a> | 
+			<a href="temperature.html">Temperature</a> | 
+			<a href="groundwater.html">Groundwater</a>
+		</div>
+		
+		<!--Map-->
+		<div class="map-size-container">
+			<img src="img/ia-340-transparent.png" width="340" height="225" class="map-image" usemap="#ia-nitrate-imgmap" alt="">
+			<map id="ia-nitrate-imgmap" name="ia-nitrate-imgmap"></map>
+			<canvas id="ia-nitrate-map" class="map-canvas" width="340" height="225"></canvas>
+		</div>
+		
+		<!--Key-->
+		<table id="ia-nitrate-key" class="map-key">
+			<tbody>
+				<tr>
+					<th style="background-color:#377EB8; color:#000;">&lt;.5</th>
+					<th style="background-color:#4DAF4A; color:#000;">.5-2.99</th>
+					<th style="background-color:#984EA3; color:#000;">3-4.99</th>
+					<th style="background-color:#FFFF33; color:#000;">5-9.99</th>
+					<th style="background-color:#FF7F00; color:#000;">10-19.99</th>
+					<th style="background-color:#E41A1C; color:#000;">20+</th>
+				</tr>
+				<tr>
+					<td>Low</td>
+					<td colspan="4"></td>
+					<td>High</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!--Table-->
+		<div id="ia-nitrate-table-container" class="map-table-container">	
+			<table id="ia-nitrate-table" class="tablesorter">
+				<thead>
+					<tr>
+						<th>Station</th>
+						<th>Nitrate</th>
+						<th>Time</th>
+						<th>Date</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4" style="text-align:center; background-color:#ccc;">Temperature values are provisional and subject to change</td>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<div id="ia-nitrate-status-container" class="map-status-container"></div>
+		</div>
+		<p class="align-center"><a href="http://waterwatch.usgs.gov/wqwatch/map?state=ia&pcode=00630">National Nitrate Monitoring</a></p>
+	</center>
+	</body>
+</html>
