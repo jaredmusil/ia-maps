@@ -1,16 +1,18 @@
-input { border:1px solid grey; }
-body{
+input {
+	border:1px solid grey;
+}
+body {
 	font: 12px/18px Arial, Sans-serif;
 }
 
 /* containers */
-.wrapper{
+.wrapper {
 	display: flex;
     flex-direction: column;
     align-items: center;
 	text-align: center;
 }
-.map-width-container{
+.map-width-container {
 	clear: both;
 	position: relative;
 	width: 340px;
@@ -18,7 +20,7 @@ body{
 	border: 0px solid #000;
 	border-radius: 5px;
 }
-.map-size-container{
+.map-size-container {
 	clear: both;
 	position: relative;
 	height: 225px;
@@ -27,14 +29,14 @@ body{
 	border: 1px solid #000;
 	border-radius: 5px;
 }
-.map-table-container{
+.map-table-container {
 	width: 330px;
 	margin: 0px;
 	padding: 5px;
 	border: 0px solid #000;
 	border-radius: 5px;
 }
-.map-status-container{
+.map-status-container {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	background-color: #fbfbfb;
@@ -56,13 +58,13 @@ body{
 	left: 0;
 	top: 0;
 }
-.map-key{
+.map-key {
 	width: 342px;
 	margin: 0 0 5px 0;
 	border: 0px solid #000;
 	font-family: 'Courier New';
 }
-.map-width-container{
+.map-width-container {
 	clear: both;
 	position: relative;
 	width: 340px;
@@ -70,7 +72,7 @@ body{
 	border: 0px solid #000;
 	border-radius: 5px;
 }
-.map-size-container{
+.map-size-container {
 	clear: both;
 	position: relative;
 	height: 225px;
@@ -78,19 +80,18 @@ body{
 	margin-bottom: 10px;
 	border: 0px solid #000;
 	border-radius: 5px;
-
 }
-.map-status{
+.map-status {
 	margin: 0;
 	padding: 2px 2px 2px 22px;
 }
-.map-status-information{ background: url('../img/information.gif') no-repeat 4px center; }
-.map-status-nocanvas{ background: url('../img/exclamation.gif') no-repeat 4px center; }
-.map-status-winter{	background: url('../img/snowflake.gif') no-repeat 4px center; }
+.map-status-information { background: url('../img/information.gif') no-repeat 4px center; }
+.map-status-nocanvas { background: url('../img/exclamation.gif') no-repeat 4px center; }
+.map-status-winter {	background: url('../img/snowflake.gif') no-repeat 4px center; }
 
 /* general */
 .loading {
-	background-color: #eee;
+	background-color: #fff;
 	background-image: url('../img/ajax-loading.gif');
 	background-position: center center;
 	background-repeat: no-repeat;
