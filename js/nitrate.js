@@ -175,7 +175,7 @@ $(document).ready(function() {
 	// Pull data from server
 	$.ajax({
 		// url: 'proxy/nitrate.php', // To avoid "same origin" error
-		url: 'http://waterservices.usgs.gov/nwis/iv/?format=json,1.1&stateCd=ia&parameterCd=99133',
+		url: 'https://waterservices.usgs.gov/nwis/iv/?format=json,1.1&stateCd=ia&parameterCd=99133',
 		dataType: 'json',
 		data: '',
 		beforeSend: function(){ $('#ia-nitrate-map').addClass('loading'); },

@@ -171,7 +171,7 @@ $(document).ready(function() {
 	// Pulls data from waterwatch
 	$.ajax({
 		// url: 'proxy/groundwater.php', // To avoid "same origin" error
-		url: 'http://waterservices.usgs.gov/nwis/iv/?format=json,1.1&stateCd=ia&parameterCd=72019',
+		url: 'https://waterservices.usgs.gov/nwis/iv/?format=json,1.1&stateCd=ia&parameterCd=72019',
 		dataType: 'json',
 		data: '',
 		beforeSend: function(){ $('#ia-groundwater-map').addClass('loading'); },
