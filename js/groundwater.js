@@ -66,7 +66,7 @@ $(document).ready(function() {
 			if (dateDifference > nintydays) {
 				//Ignore
 			} else {
-				tableRow = '<tr><td id="gw-code-' + data[i].siteCode + '" readonly="readonly"><a href="' + data[i].url + '">' + data[i].siteCode + '</a></td>' +
+				tableRow = '<tr><td id="gw-code-' + data[i].siteCode + '" readonly="readonly"><a target="_blank" href="' + data[i].url + '">' + data[i].siteCode + '</a></td>' +
 				'<td id="gw-code-' + data[i].siteCode + '" readonly="readonly">' + data[i].value + '</td>' +
 				'<td id="gw-code-' + data[i].siteCode + '" readonly="readonly">' + data[i].time + '</td>' +
 				'<td id="gw-code-' + data[i].siteCode + '" readonly="readonly">' + data[i].date + '</td>';
