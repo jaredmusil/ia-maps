@@ -4,6 +4,12 @@ body{
 }
 
 /* containers */
+.wrapper{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+}
 .map-width-container{
 	clear: both;
 	position: relative;
@@ -85,7 +91,7 @@ body{
 /* general */
 .loading {
 	background-color: #eee;
-	background-image: url('img/ajax-loading.gif');
+	background-image: url('../img/ajax-loading.gif');
 	background-position: center center;
 	background-repeat: no-repeat;
 	opacity: 1;

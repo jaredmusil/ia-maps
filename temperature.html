@@ -17,68 +17,68 @@
 		<script type="text/javascript" src="js/temperature.js"></script>
 	</head>
 	<body>
-	<center>
-		<!--Navigation-->
-		<div class="map-width-container">
-			<a href="nitrate.html">Nitrate</a> | 
-			<a href="temperature.html">Temperature</a> | 
-			<a href="groundwater.html">Groundwater</a>
-		</div>
-		
-		<!--Map-->
-		<div class="map-size-container">
-			<img src="img/ia-340-transparent.png" width="340" height="225" class="map-image" usemap="#ia-temperature-imgmap" alt="">
-			<map id="ia-temperature-imgmap" name="ia-temperature-imgmap"></map>
+		<div class="wrapper">
+			<!--Navigation-->
+			<div class="map-width-container">
+				<a href="nitrate.html">Nitrate</a> | 
+				<a href="temperature.html">Temperature</a> | 
+				<a href="groundwater.html">Groundwater</a>
+			</div>
 			
-			<canvas id="ia-temperature-map" class="map-canvas" width="340" height="225" style="left:0; top:0;"></canvas>
-		</div>
-		
-		<!--Key-->
-		<table id="ia-temperature-key" class="map-key">
-			<tbody>
-				<tr>
-					<th style="background-color:rgb(0,112,181); color:#ccc;">&lt;1</th>
-					<th style="background-color:rgb(71,187,223); color:#000;">1-4.9</th>
-					<th style="background-color:rgb(215,223,239); color:#000;">5-9.9</th>
-					<th style="background-color:rgb(247,216,168); color:#000;">10-19.9</th>
-					<th style="background-color:rgb(238,133,122); color:#000;">20-25.9</th>
-					<th style="background-color:rgb(205,77,83); color:#000;">25-29.9</th>
-					<th style="background-color:rgb(175,55,72); color:#000;">&gt;30</th>
-				</tr>
-				<tr>
-					<td>Cold</td>
-					<td colspan="2"></td>
-					<td style="text-align:center">&deg;C</td>
-					<td colspan="2"></td>
-					<td>Hot</td>
-				</tr>
-			</tbody>
-		</table>
-		
-		<!--Table-->
-		<div id="ia-temperature-table-container" class="map-table-container">
-			<table id="ia-temperature-table" class="tablesorter">
-				<thead>
-					<tr>
-						<th>Station</th>
-						<th>Temp.</th>
-						<th>Time</th>
-						<th>Date</th>
-					</tr>
-				</thead>
+			<!--Map-->
+			<div class="map-size-container">
+				<img src="img/ia-340-transparent.png" width="340" height="225" class="map-image" usemap="#ia-temperature-imgmap" alt="">
+				<map id="ia-temperature-imgmap" name="ia-temperature-imgmap"></map>
+				
+				<canvas id="ia-temperature-map" class="map-canvas" width="340" height="225" style="left:0; top:0;"></canvas>
+			</div>
+			
+			<!--Key-->
+			<table id="ia-temperature-key" class="map-key">
 				<tbody>
-				</tbody>
-				<tfoot>
 					<tr>
-						<td colspan="4" style="text-align:center; background-color:#ccc;">Temperature values are provisional and subject to change</td>
+						<th style="background-color:rgb(0,112,181); color:#ccc;">&lt;1</th>
+						<th style="background-color:rgb(71,187,223); color:#000;">1-4.9</th>
+						<th style="background-color:rgb(215,223,239); color:#000;">5-9.9</th>
+						<th style="background-color:rgb(247,216,168); color:#000;">10-19.9</th>
+						<th style="background-color:rgb(238,133,122); color:#000;">20-25.9</th>
+						<th style="background-color:rgb(205,77,83); color:#000;">25-29.9</th>
+						<th style="background-color:rgb(175,55,72); color:#000;">&gt;30</th>
 					</tr>
-				</tfoot>
+					<tr>
+						<td>Cold</td>
+						<td colspan="2"></td>
+						<td style="text-align:center">&deg;C</td>
+						<td colspan="2"></td>
+						<td>Hot</td>
+					</tr>
+				</tbody>
 			</table>
+			
+			<!--Table-->
+			<div id="ia-temperature-table-container" class="map-table-container">
+				<table id="ia-temperature-table" class="tablesorter">
+					<thead>
+						<tr>
+							<th>Station</th>
+							<th>Temp.</th>
+							<th>Time</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4" style="text-align:center; background-color:#ccc;">Temperature values are provisional and subject to change</td>
+						</tr>
+					</tfoot>
+				</table>
 
-			<div id="ia-temperature-status-container" class="map-status-container"></div>
+				<div id="ia-temperature-status-container" class="map-status-container"></div>
+			</div>
+			
+			<p><a href="http://waterwatch.usgs.gov/wqwatch/map?state=us&pcode=00010">National Temperature Monitoring</a></p>
 		</div>
-		
-		<p><a href="http://waterwatch.usgs.gov/wqwatch/map?state=us&pcode=00010">National Temperature Monitoring</a></p>
-	</center>
   </body>
 </html>

@@ -17,61 +17,61 @@
 		<script type="text/javascript" src="js/groundwater.js"></script>
 	</head>
 	<body>
-	<center>
-		<!--Navigation-->
-		<div class="map-width-container">
-			<a href="nitrate.html">Nitrate</a> | 
-			<a href="temperature.html">Temperature</a> | 
-			<a href="groundwater.html">Groundwater</a>
-		</div>
-		
-		<!--Map-->
-		<div class="map-size-container">
-			<img src="img/ia-340-transparent.png" width="340" height="225" class="map-image" usemap="#ia-groundwater-imgmap" alt="">
-			<map id="ia-groundwater-imgmap" name="ia-groundwater-imgmap"></map>
+		<div class="wrapper">
+			<!--Navigation-->
+			<div class="map-width-container">
+				<a href="nitrate.html">Nitrate</a> | 
+				<a href="temperature.html">Temperature</a> | 
+				<a href="groundwater.html">Groundwater</a>
+			</div>
 			
-			<canvas id="ia-groundwater-map" class="map-canvas" width="340" height="225"></canvas>
-		</div>
-		
-		<!--Key-->
-		<table id="ia-groundwater-key" class="map-key">
-			<tbody>
-				<tr>
-					<th style="background-color:rgb(175,55,72); color:#000;">&lt;1</th>
-					<th style="background-color:rgb(205,77,83); color:#000;">1-4.9</th>
-					<th style="background-color:rgb(238,133,122); color:#000;">5-9.9</th>
-					<th style="background-color:rgb(247,216,168); color:#000;">10-19.9</th>
-					<th style="background-color:rgb(215,223,239); color:#000;">20-25.9</th>
-					<th style="background-color:rgb(71,187,223); color:#000;">25-29.9</th>
-					<th style="background-color:rgb(0,112,181); color:#ccc;">&gt;30</th>
-				</tr>
-			</tbody>
-		</table>
-		
-		<!--Table-->
-		<div id="ia-groundwater-table-container" class="map-table-container">
-			<table id="ia-groundwater-table" class="tablesorter">
-				<thead>
-					<tr>
-						<th>Station</th>
-						<th>Level</th>
-						<th>Time</th>
-						<th>Date</th>
-					</tr>
-				</thead>
+			<!--Map-->
+			<div class="map-size-container">
+				<img src="img/ia-340-transparent.png" width="340" height="225" class="map-image" usemap="#ia-groundwater-imgmap" alt="">
+				<map id="ia-groundwater-imgmap" name="ia-groundwater-imgmap"></map>
+				
+				<canvas id="ia-groundwater-map" class="map-canvas" width="340" height="225"></canvas>
+			</div>
+			
+			<!--Key-->
+			<table id="ia-groundwater-key" class="map-key">
 				<tbody>
-				</tbody>
-				<tfoot>
 					<tr>
-						<td colspan="4" style="text-align:center; color:#000; background-color:#ccc;"> Groundwater values are provisional and subject to change</td>
+						<th style="background-color:rgb(175,55,72); color:#000;">&lt;1</th>
+						<th style="background-color:rgb(205,77,83); color:#000;">1-4.9</th>
+						<th style="background-color:rgb(238,133,122); color:#000;">5-9.9</th>
+						<th style="background-color:rgb(247,216,168); color:#000;">10-19.9</th>
+						<th style="background-color:rgb(215,223,239); color:#000;">20-25.9</th>
+						<th style="background-color:rgb(71,187,223); color:#000;">25-29.9</th>
+						<th style="background-color:rgb(0,112,181); color:#ccc;">&gt;30</th>
 					</tr>
-				</tfoot>
+				</tbody>
 			</table>
 			
-			<div id="ia-groundwater-status-container" class="map-status-container"></div>
+			<!--Table-->
+			<div id="ia-groundwater-table-container" class="map-table-container">
+				<table id="ia-groundwater-table" class="tablesorter">
+					<thead>
+						<tr>
+							<th>Station</th>
+							<th>Level</th>
+							<th>Time</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4" style="text-align:center; color:#000; background-color:#ccc;"> Groundwater values are provisional and subject to change</td>
+						</tr>
+					</tfoot>
+				</table>
+				
+				<div id="ia-groundwater-status-container" class="map-status-container"></div>
+			</div>
+			
+			<p><a href="http://groundwaterwatch.usgs.gov/StateMapsNet.asp?ncd=rtn&sc=19">National Groundwater Monitoring</a></p>
 		</div>
-		
-		<p><a href="http://groundwaterwatch.usgs.gov/StateMapsNet.asp?ncd=rtn&sc=19">National Groundwater Monitoring</a></p>
-	</center>
   </body>
 </html>

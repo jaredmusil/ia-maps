@@ -176,7 +176,8 @@ $(document).ready(function() {
 
 	// Pull data from server
 	$.ajax({
-		url: 'proxy/temperature.php', // To avoid "same origin" error
+		// url: 'proxy/temperature.php', // To avoid "same origin" error
+		url: 'http://waterservices.usgs.gov/nwis/iv/?format=json,1.1&stateCd=ia&parameterCd=00010',
 		dataType: 'json',
 		data: '',
 		beforeSend: function(){ $("#ia-temperature-map").addClass("loading"); },
